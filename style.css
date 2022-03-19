@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 10px;
+    /* border: 1px solid #000; */
+}
+
+.lists {
+    display: flex;
+
+}
+
+.dropZone {
+    display: block;
+    list-style: none;
+    width: 500px;
+    height: 300px;
+    overflow-y: scroll;
+    margin: 10px;
+    /* padding: 0; */
+    border: 3px solid #000;
+}
+
+.dropZone--active {
+    display: block;
+    list-style: none;
+    width: 500px;
+    height: 300px;
+    overflow-y: scroll;
+    /* margin: 10px; */
+    /* padding: 0; */
+    border: 3px solid rgb(255, 0, 0);
+}
+
+.dragItem {
+    position: relative;
+    background-color: bisque;
+    border-bottom: 2px solid rgb(233, 173, 23);
+    font-weight: bold;
+    padding: 5px;
+    white-space: normal;
+}
+
+.dragItem--active {
+    position: relative;
+    background-color: blue;
+    border-bottom: 2px solid rgb(233, 173, 23);
+    font-weight: bold;
+    padding: 5px;
+    white-space: normal;
+}
+
+.dragItem > p:first-child {
+    font-weight: bold;
+}
+
+.dragItem {
+    word-break: break-all;
+}
+
+
+
+.dragItem > p {
+    font-weight: normal;
+    white-space: normal;
+}
+
+.dragItem > div.close {
+    /* content: "[X]"; */
+    position: absolute;
+    display: block;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+
+.add {
+    margin: 10px;
+    width: 100px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.add.hidden {
+    display: none;
+}
+
+.brend {
+    display: none;
+}
+
+.brend.active {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+    background-color: rgb(161, 216, 199);
+    width: 500px;
+    height: 160px;
+    border: 5px solid rgb(131, 81, 81);
+}
+
+.save {
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+.title, .description {
+    margin: 10px;  
+}
+
